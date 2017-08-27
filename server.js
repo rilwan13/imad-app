@@ -10,7 +10,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/rilwan-one', function (req, res) {
-    res.send('Rilwan one requested and will be served here');
+     res.sendFile(path.join(__dirname, 'ui', 'rilwan-one.html'));
+    
 });
 
 app.get('/rilwan-two', function (req, res) {
