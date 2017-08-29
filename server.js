@@ -14,11 +14,11 @@ app.get('/rilwan-one', function (req, res) {
 });
 
 app.get('/rilwan-two', function (req, res) {
-    res.send('Rilwan two requested and will be served here');
+     res.sendFile(path.join(__dirname, 'ui', 'rilwan-two.html'));   
 });
 
 app.get('/rilwan-three', function (req, res) {
-    res.send('Rilwan three requested and will be served here');
+    res.sendFile(path.join(__dirname, 'ui', 'rilwan-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
